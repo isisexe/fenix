@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fênix | Gestão Integrada de Segurança Contra Incêndio (GISCI)</title>
+    
+    <!-- Tipografia e Ícones -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="nav-bar" id="navbar">
+        <div class="container nav-content">
+            <a href="#" class="logo">
+                <div class="logo-icon"><i class="fas fa-fire-alt"></i></div>
+                <span>FÊ<span class="highlight">NIX</span></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#ciclo">Ecossistema</a></li>
+                <li><a href="#ia">Inteligência</a></li>
+                <li><a href="#isci">ISCI</a></li>
+                <li><a href="#modulos">Módulos</a></li>
+                <li><a href="#arquitetura">Tecnologia</a></li>
+            </ul>
+            <div class="nav-cta">
+                <button class="btn btn-outline mobile-hide">Login</button>
+                <button class="btn btn-primary">Agendar Demo</button>
+            </div>
+            <button class="menu-toggle" id="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- SECTION I: HERO -->
+    <header class="hero">
+        <div class="hero-bg-glow"></div>
+        <div class="container hero-content">
+            <div class="badge-reveal" data-reveal>
+                <span class="badge-text">Inovação em Segurança Patrimonial</span>
+            </div>
+            <h1 data-reveal>A inteligência que protege antes da <span class="gradient-text">primeira faísca.</span></h1>
+            <p class="hero-sub" data-reveal>Conheça a Fênix: a plataforma brasileira pioneira em Gestão Integrada da Segurança Contra Incêndio (GISCI). Unificamos prevenção, monitoramento e resposta estratégica em um único ecossistema inteligente.</p>
+            <div class="hero-actions" data-reveal>
+                <button class="btn btn-primary btn-lg">Agendar Demonstração Técnica</button>
+                <button class="btn btn-secondary btn-lg">Explorar Ecossistema <i class="fas fa-arrow-right"></i></button>
+            </div>
+            
+            <div class="hero-mockup-wrapper" data-reveal>
+                <div class="mockup-frame">
+                    <div class="mockup-header">
+                        <div class="header-dots"><span></span><span></span><span></span></div>
+                        <div class="header-search">fenix-platform.io/dashboard</div>
+                    </div>
+                    <div class="mockup-ui">
+                        <!-- Simulação visual via CSS/Imagens -->
+                        <div class="ui-sidebar"></div>
+                        <div class="ui-body">
+                            <div class="ui-chart-main"></div>
+                            <div class="ui-cards-grid">
+                                <span></span><span></span><span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- SECTION II: STATS -->
+    <section class="stats">
+        <div class="container stats-grid">
+            <div class="stat-item" data-reveal>
+                <span class="counter">+1.000</span>
+                <p>Unidades Monitoradas</p>
+            </div>
+            <div class="stat-item" data-reveal>
+                <span class="counter">45%</span>
+                <p>Menor Tempo de Resposta</p>
+            </div>
+            <div class="stat-item" data-reveal>
+                <span class="counter">100%</span>
+                <p>Conformidade Técnica</p>
+            </div>
+            <div class="stat-item" data-reveal>
+                <span class="counter">Vidas</span>
+                <p>Prioridade Absoluta</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION III: O CICLO FÊNIX -->
+    <section id="ciclo" class="philosophy">
+        <div class="container">
+            <div class="section-heading" data-reveal>
+                <span class="tag">Filosofia de Proteção</span>
+                <h2>O Ciclo Fênix de Segurança</h2>
+                <p>Uma narrativa técnica e fluida que cobre todas as fases da gestão de riscos.</p>
+            </div>
+            
+            <div class="philosophy-grid">
+                <!-- Prevenir -->
+                <div class="phi-card" data-reveal>
+                    <div class="phi-head">
+                        <i class="fas fa-shield-halved"></i>
+                        <h3>PREVENIR</h3>
+                    </div>
+                    <p>Gestão de conformidade rigorosa e inspeções programadas.</p>
+                    <ul class="phi-list">
+                        <li>Auditoria de equipamentos via QR Code</li>
+                        <li>Alertas automáticos de validade</li>
+                        <li>Checklists normatizados</li>
+                    </ul>
+                </div>
+                <!-- Preparar -->
+                <div class="phi-card active" data-reveal>
+                    <div class="phi-head">
+                        <i class="fas fa-user-shield"></i>
+                        <h3>PREPARAR</h3>
+                    </div>
+                    <p>Treinamento e capacitação constante de equipes internas.</p>
+                    <ul class="phi-list">
+                        <li>Gestão digital de brigadas</li>
+                        <li>Simulados de abandono dinâmicos</li>
+                        <li>Planos de emergência interativos</li>
+                    </ul>
+                </div>
+                <!-- Responder -->
+                <div class="phi-card" data-reveal>
+                    <div class="phi-head">
+                        <i class="fas fa-fire-extinguisher"></i>
+                        <h3>RESPONDER</h3>
+                    </div>
+                    <p>Protocolos de ação imediata para mitigar danos.</p>
+                    <ul class="phi-list">
+                        <li>Acionamento SOS em 1 toque</li>
+                        <li>Rotas de fuga dinâmicas</li>
+                        <li>Guia de primeiros socorros assistido</li>
+                    </ul>
+                </div>
+                <!-- Aprender -->
+                <div class="phi-card" data-reveal>
+                    <div class="phi-head">
+                        <i class="fas fa-chart-pie"></i>
+                        <h3>APRENDER</h3>
+                    </div>
+                    <p>Análise de dados para evolução do sistema.</p>
+                    <ul class="phi-list">
+                        <li>Business Intelligence (BI)</li>
+                        <li>Relatórios pós-incidente</li>
+                        <li>Auditoria automatizada</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION IV: INTELIGÊNCIA ARTIFICIAL -->
+    <section id="ia" class="ia-feature">
+        <div class="container ia-grid">
+            <div class="ia-text" data-reveal>
+                <span class="tag">O Olho Digital</span>
+                <h2>Inteligência Artificial & Visão Computacional</h2>
+                <p>Nossa IA assistente converte imagens de inspeção em dados estruturados, eliminando falhas humanas e prevenindo fraudes em relatórios técnicos.</p>
+                <div class="feature-item">
+                    <i class="fas fa-camera"></i>
+                    <div>
+                        <h4>Identificação Automática de Obstruções</h4>
+                        <p>Detecção de objetos bloqueando rotas de fuga através de análise de câmeras.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-gauge-high"></i>
+                    <div>
+                        <h4>Verificação de Pressão via Foto</h4>
+                        <p>Algoritmos que leem manômetros e validam o estado dos extintores instantaneamente.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ia-visual" data-reveal>
+                <div class="ia-mockup">
+                    <div class="scan-line"></div>
+                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800" alt="IA Analysis">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION V: ISCI -->
+    <section id="isci" class="isci-dashboard">
+        <div class="container">
+            <div class="section-heading" data-reveal>
+                <span class="tag">Algoritmo Proprietário</span>
+                <h2>Índice de Segurança Contra Incêndio (ISCI)</h2>
+                <p>O coração do seu dashboard. Uma pontuação de 0 a 100 que consolida o estado real de segurança de cada edificação.</p>
+            </div>
+            
+            <div class="isci-content">
+                <div class="isci-card-main" data-reveal>
+                    <div class="gauge-container">
+                        <div class="gauge-value">85</div>
+                        <div class="gauge-label">Muito Bom</div>
+                    </div>
+                    <div class="isci-details">
+                        <h4>Fatores de Cálculo</h4>
+                        <div class="factor"><span>Equipamentos</span> <div class="bar"><div class="fill" style="width: 90%;"></div></div></div>
+                        <div class="factor"><span>Treinamento</span> <div class="bar"><div class="fill" style="width: 75%;"></div></div></div>
+                        <div class="factor"><span>Conformidade</span> <div class="bar"><div class="fill" style="width: 100%;"></div></div></div>
+                    </div>
+                </div>
+                <div class="isci-info" data-reveal>
+                    <h3>Gestão Baseada em Dados</h3>
+                    <p>Visualize heatmaps de risco e identifique quais áreas da planta precisam de atenção imediata. O ISCI permite uma gestão preditiva, agindo onde o risco é maior antes mesmo de um incidente ocorrer.</p>
+                    <button class="btn btn-secondary">Entender Metodologia</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION VI: SIMULADOR DE EVACUAÇÃO -->
+    <section class="simulator">
+        <div class="container simulator-grid">
+            <div class="sim-visual" data-reveal>
+                <!-- Ilustração 3D ou Mockup -->
+                <div class="sim-3d-box">
+                    <div class="sim-node" style="top: 20%; left: 30%;"></div>
+                    <div class="sim-node warning" style="top: 50%; left: 60%;"></div>
+                    <div class="sim-path"></div>
+                </div>
+            </div>
+            <div class="sim-text" data-reveal>
+                <span class="tag">Estratégia de Vida</span>
+                <h2>Simulador de Evacuação 3D</h2>
+                <p>Utilizamos modelos matemáticos para calcular o tempo total de evacuação e identificar gargalos físicos reais nas edificações.</p>
+                <ul class="sim-features">
+                    <li><i class="fas fa-check"></i> Identificação de pontos de estrangulamento</li>
+                    <li><i class="fas fa-check"></i> Cálculo de percentual de evacuação com sucesso</li>
+                    <li><i class="fas fa-check"></i> Sugestões automáticas de ajustes estruturais</li>
+                </ul>
+                <div class="sim-stat">
+                    <span>92%</span>
+                    <p>Precisão nas simulações de fluxo humano.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION VII: MÓDULOS DE GESTÃO -->
+    <section id="modulos" class="bento-modules">
+        <div class="container">
+            <div class="section-heading" data-reveal>
+                <span class="tag">Operação Digital</span>
+                <h2>Módulos Especializados</h2>
+            </div>
+            
+            <div class="bento-grid">
+                <div class="bento-card large" data-reveal>
+                    <h3>Inspeções Inteligentes</h3>
+                    <p>Checklist digital com geolocalização, evidências fotográficas e sincronização offline.</p>
+                    <div class="bento-icon"><i class="fas fa-clipboard-check"></i></div>
+                </div>
+                <div class="bento-card" data-reveal>
+                    <h3>Agenda & Alertas</h3>
+                    <p>Controle rigoroso de manutenções e vistorias.</p>
+                    <div class="bento-icon small"><i class="fas fa-calendar-alt"></i></div>
+                </div>
+                <div class="bento-card" data-reveal>
+                    <h3>Gestão de Brigada</h3>
+                    <p>Dashboard de proficiência e presença.</p>
+                    <div class="bento-icon small"><i class="fas fa-users-cog"></i></div>
+                </div>
+                <div class="bento-card tall" data-reveal>
+                    <h3>Documentação Centralizada</h3>
+                    <p>Repositório seguro para AVCB, laudos técnicos e plantas digitais protegidas por criptografia.</p>
+                    <div class="bento-icon"><i class="fas fa-file-shield"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION VIII: PROTOCOLO & PRIMEIROS SOCORROS -->
+    <section class="response-aid">
+        <div class="container">
+            <div class="sos-banner" data-reveal>
+                <div class="sos-text">
+                    <h2>Protocolo de Resposta Imediata</h2>
+                    <p>Em segundos, o app mobiliza brigada e bombeiros com 1 toque.</p>
+                </div>
+                <div class="sos-button-wrapper">
+                    <button class="sos-btn">SOS</button>
+                    <span class="sos-pulse"></span>
+                </div>
+            </div>
+
+            <div class="aid-grid">
+                <div class="aid-card" data-reveal>
+                    <div class="aid-icon"><i class="fas fa-fire"></i></div>
+                    <h4>Queimaduras</h4>
+                    <p>Resfriar área com água corrente. Não usar gelo.</p>
+                </div>
+                <div class="aid-card" data-reveal>
+                    <div class="aid-icon"><i class="fas fa-heart-pulse"></i></div>
+                    <h4>RCP</h4>
+                    <p>Guia rítmico para compressões torácicas.</p>
+                </div>
+                <div class="aid-card" data-reveal>
+                    <div class="aid-icon"><i class="fas fa-lungs"></i></div>
+                    <h4>Engasgos</h4>
+                    <p>Manobra de Heimlich assistida visualmente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION IX: ARQUITETURA DO SISTEMA -->
+    <section id="arquitetura" class="arch-section">
+        <div class="container">
+            <div class="section-heading" data-reveal>
+                <span class="tag">Engine de Missão Crítica</span>
+                <h2>Arquitetura de Alta Disponibilidade</h2>
+            </div>
+            
+            <div class="arch-flow" data-reveal>
+                <div class="arch-node">
+                    <div class="node-icon"><i class="fas fa-mobile-screen"></i></div>
+                    <span>Interfaces Flutter/React</span>
+                </div>
+                <div class="arch-arrow"></div>
+                <div class="arch-node">
+                    <div class="node-icon"><i class="fas fa-cloud"></i></div>
+                    <span>API Cloud Security</span>
+                </div>
+                <div class="arch-arrow"></div>
+                <div class="arch-node">
+                    <div class="node-icon"><i class="fas fa-database"></i></div>
+                    <span>Banco de Dados SQL/NoSQL</span>
+                </div>
+                <div class="arch-arrow"></div>
+                <div class="arch-node highlight-node">
+                    <div class="node-icon"><i class="fas fa-broadcast-tower"></i></div>
+                    <span>Integrações Externas</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION X: TIMELINE -->
+    <section class="timeline">
+        <div class="container">
+            <div class="section-heading" data-reveal>
+                <h2>Jornada de Implementação</h2>
+            </div>
+            <div class="steps-grid">
+                <div class="step" data-reveal>
+                    <div class="step-num">01</div>
+                    <h4>Diagnóstico</h4>
+                    <p>Mapeamento de riscos e definição de escopo técnico.</p>
+                </div>
+                <div class="step" data-reveal>
+                    <div class="step-num">02</div>
+                    <h4>Digitalização</h4>
+                    <p>Upload de plantas e cadastro de ativos via app.</p>
+                </div>
+                <div class="step" data-reveal>
+                    <div class="step-num">03</div>
+                    <h4>Treinamento</h4>
+                    <p>Capacitação da brigada e validação de protocolos.</p>
+                </div>
+                <div class="step" data-reveal>
+                    <div class="step-num">04</div>
+                    <h4>Go-Live</h4>
+                    <p>Ativação do monitoramento ISCI em tempo real.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION XI: COMPLIANCE -->
+    <section class="compliance">
+        <div class="container compliance-wrapper" data-reveal>
+            <div class="compliance-text">
+                <h3>Rigor Técnico & Conformidade</h3>
+                <p>Sempre pronto para auditorias e renovações de licenças oficiais.</p>
+            </div>
+            <div class="norm-tags">
+                <span class="norm">NBR 9077</span>
+                <span class="norm">NBR 12693</span>
+                <span class="norm">NBR 13434</span>
+                <span class="norm">NR-23</span>
+                <span class="norm">CBM</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION XII: FAQ -->
+    <section class="faq">
+        <div class="container">
+            <div class="section-heading" data-reveal>
+                <h2>Central de Inteligência</h2>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item" data-reveal>
+                    <div class="faq-question">Como a Fênix integra com câmeras existentes? <i class="fas fa-plus"></i></div>
+                    <div class="faq-answer">Utilizamos protocolos RTSP/ONVIF para ler fluxos de vídeo e aplicar nossas camadas de IA sem necessidade de troca de hardware.</div>
+                </div>
+                <div class="faq-item" data-reveal>
+                    <div class="faq-question">O sistema funciona offline? <i class="fas fa-plus"></i></div>
+                    <div class="faq-answer">Sim, o aplicativo mobile possui cache local para inspeções e protocolos de emergência, sincronizando os dados assim que a conexão é restabelecida.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION XIII: FOOTER -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="logo">
+                    <div class="logo-icon"><i class="fas fa-fire-alt"></i></div>
+                    <span>FÊ<span class="highlight">NIX</span></span>
+                </div>
+                <p>Proteção inteligente para um mundo conectado. A evolução da segurança contra incêndio começa aqui.</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-nav">
+                <h4>Ecossistema</h4>
+                <ul>
+                    <li><a href="#">Prevenção</a></li>
+                    <li><a href="#">Treinamento</a></li>
+                    <li><a href="#">Simulador 3D</a></li>
+                    <li><a href="#">Dashboard ISCI</a></li>
+                </ul>
+            </div>
+            <div class="footer-nav">
+                <h4>Empresa</h4>
+                <ul>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#">Unidades</a></li>
+                    <li><a href="#">Blog Técnico</a></li>
+                    <li><a href="#">Carreiras</a></li>
+                </ul>
+            </div>
+            <div class="footer-nav">
+                <h4>Suporte</h4>
+                <ul>
+                    <li><a href="#">Documentação</a></li>
+                    <li><a href="#">Central de Ajuda</a></li>
+                    <li><a href="#">Termos de Uso</a></li>
+                    <li><a href="#">Privacidade</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>&copy; 2024 Projeto Fênix. Todos os direitos reservados. Brasil.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+<!-- MODAL DE AGENDAMENTO -->
+<div id="demoModal" class="modal-overlay">
+    <div class="modal-content">
+        <button class="modal-close" id="closeModal">&times;</button>
+        <div class="modal-header">
+            <h3>Agendar Demonstração Técnica</h3>
+            <p>Nossos especialistas entrarão em contato em até 24h.</p>
+        </div>
+        <form id="demoForm" class="modal-form">
+            <div class="form-group">
+                <label>Nome Completo</label>
+                <input type="text" placeholder="Ex: Roberto Silva" required>
+            </div>
+            <div class="form-group">
+                <label>Empresa</label>
+                <input type="text" placeholder="Nome da sua empresa" required>
+            </div>
+            <div class="form-group">
+                <label>E-mail Corporativo</label>
+                <input type="email" placeholder="roberto@empresa.com" required>
+            </div>
+            <div class="form-group">
+                <label>Telefone</label>
+                <input type="tel" placeholder="(11) 99999-9999" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Enviar solicitação</button>
+        </form>
+    </div>
+</div>
+
+<!-- NOTIFICAÇÃO SOS -->
+<div id="sosNotification" class="sos-toast">
+    <i class="fas fa-exclamation-triangle"></i>
+    <div class="toast-content">
+        <strong>Protocolo de emergência iniciado.</strong>
+        <span>Brigada acionada.</span>
+    </div>
+</div>
+</body>
+</html>
